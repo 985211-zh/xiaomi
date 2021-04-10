@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./user.css">
+    <title>BS模板</title>
+</head>
+
+<body>
+    
+    <div class="hd"><img src="./user/avatar.png" alt=""><a href="">登录/注册</a></div>
+    <ul class="box">
+        <li>
+            <span>我的订单</span>
+            <span>全部订单</span>
+        </li>
+        <li>
+            <span>
+                <img src="./user/1.png" alt="">
+                <p>待付款</p>
+            </span>
+            <span>
+                <img src="./user/2.png" alt="">
+                <p>待收货</p>
+            </span>
+            <span>
+                <img src="./user/3.png" alt="">
+                <p>退换货</p>
+            </span>
+        </li>
+        <li>
+            <img src="./user/4.png" alt="">
+            <a href="">会员中心</a>
+        </li>
+        <li>
+            <img src="./user/5.png" alt="">
+            <a href="">我的优惠</a>
+        </li>
+        <li>
+            <img src="./user/6.png" alt="">
+            <a href="">服务中心</a>
+        </li>
+        <li>
+            <img src="./user/7.png" alt="">
+            <a href="">小米之家</a>
+        </li>
+        <li>
+            <img src="./user/8.png" alt="">
+            <a href="">我的F码</a>
+        </li>
+        <li>
+            <img src="./user/9.png" alt="">
+            <a href="">礼物兑换码</a>
+        </li>
+        <li>
+            <img src="./user/10.png" alt="">
+            <a href="">设置</a>
+        </li>
+    </ul>
+    <!-- 底部导航条 -->
+    <style>
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(250, 250, 250);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            width: 20%;
+            text-align: center;
+            font-size: 0.22rem;
+        }
+
+        nav ul li img {
+            width: 30%;
+        }
+
+        nav ul li p {
+            margin: 5px;
+            color: #999;
+        }
+
+        nav ul li a {
+            display: block;
+            line-height: .3rem;
+        }
+
+        nav ul li p.active {
+            font-size: 0.25rem;
+            color: #ff6700;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <img src="./imgs/tabbar/icon-home.c1947eda40.png" alt="">
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="./category.html">
+                    <img src="./imgs/tabbar/icon-category.be93273636.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="./star.html">
+                    <img src="./imgs/tabbar/icon-star.d051789804.png" alt="">
+                    <p>星球</p>
+                </a>
+            </li>
+            <li>
+                <a href="./cart.html">
+                    <img src="./imgs/tabbar/icon-cart.585c3aa4d3.png" alt="">
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./imgs/tabbar/icon-user-selected.fceea5d907.png" alt="">
+                    <p class="active">我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="./bootstrap-3.3.7-dist/js/jquery-3.5.1.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+</html>
+<script>
+    function calcHTMLFontSize() {
+        var width = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = (width / 7.5) + "px";
+    }
+    calcHTMLFontSize();
+    window.onresize = function () {
+        calcHTMLFontSize();
+    }
+</script>
